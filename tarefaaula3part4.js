@@ -178,7 +178,7 @@ function calcularSituacaoAluno() {
     }
 }
 calcularSituacaoAluno();
-*/
+
 
 const dia = parseInt(leitura("Digite o dia: "));
 const mes = parseInt(leitura("Digite o mês: "));
@@ -206,3 +206,35 @@ if (dia < 1 || dia > 31) {
 function eanoBissexto(ano){
     return (ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0);
 }
+
+*/
+
+var mesNumero= Number(leitura("Digite um nùmero que indicará o seu mês respectivo: "));
+
+if (mesNumero == 1) {
+    console.log("Janeiro.");
+} else if (mesNumero == 2) {
+    console.log("Fevereiro.");
+} else if (mesNumero == 3) {
+    console.log ("Março.") 
+} else if (mesNumero == 4) {
+    console.log ("Abril.");
+} else if (mesNumero == 5) {
+    console.log("Maio");
+} else if(mesNumero == 6) {
+    console.log("Junho.")
+} else if (mesNumero == 7) {
+    console.log("Julho.");
+} else if (mesNumero == 8) {
+    console.log("Agosto.");
+} else if (mesNumero == 9) {
+    console.log("Setembro.");
+} else if (mesNumero == 10) {
+    console.log("Outubro");
+} else if (mesNumero == 11) {
+    console.log("Novembro.");
+} else if (mesNumero == 12) {
+    console.log("Dezembro.");
+} else (
+    console.log("Inválido.")
+)
