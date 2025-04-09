@@ -209,7 +209,8 @@ function eanoBissexto(ano){
 
 */
 
-var mesNumero= Number(leitura("Digite um nùmero que indicará o seu mês respectivo: "));
+var mesNumero= Number(leitura("Digite um nùmero que indicará" +
+     "o seu mês respectivo: "));
 
 if (mesNumero == 1) {
     console.log("Janeiro.");
