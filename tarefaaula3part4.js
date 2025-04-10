@@ -207,10 +207,10 @@ function eanoBissexto(ano){
     return (ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0);
 }
 
-*/
+
 
 var mesNumero= Number(leitura("Digite um nùmero que indicará" +
-     "o seu mês respectivo: "));
+     " o seu mês respectivo: "));
 
 if (mesNumero == 1) {
     console.log("Janeiro.");
@@ -239,3 +239,32 @@ if (mesNumero == 1) {
 } else (
     console.log("Inválido.")
 )
+ 
+
+
+angulo1 = Number(leitura("Digite o valor do primeiro ângulo: "));
+angulo2 = Number(leitura("Digite o valor do segundo ângulo: "));
+angulo3 = Number(leitura("Digite o valor do terceiro ângulo: "));
+
+if(angulo1 + angulo2 + angulo3 == 180 && angulo1 > 0 && angulo2 > 0 && angulo3 > 0){
+    if(angulo1 == 90 && angulo2 == 90 && angulo3 == 90){
+        console.log("Triângulo Retângulo");
+     } else if (angulo1 > 90 || angulo2 > 90 || angulo3 > 90){
+        console.log("Triângulo Obtusângulo");
+     }else(
+            console.log("Triângulo Acutângulo"));
+     }
+     else {
+    console.log("Ângulos inválidos para formar um triângulo.")};
+
+    */
+const anoNascimento = parseInt(leitura("Digite o ano de nascimento: "));
+
+const anoAtual = new Date().getFullYear();
+const idade = anoAtual - anoNascimento;
+
+if (idade >= 16) {
+  console.log(`Você tem ${idade} anos. Pode votar este ano.`);
+} else {
+  console.log(`Você tem ${idade} anos. Ainda não pode votar este ano.`);
+}
