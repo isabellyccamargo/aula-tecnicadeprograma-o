@@ -10,7 +10,6 @@ for (let x = 1; x<=10; x = x+1){
 }
 
 console.log(numeros);
-
 let soma = 0;
 for (x = 1; x<=10; x++){
     soma= soma + x;
